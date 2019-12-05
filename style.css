@@ -1,0 +1,84 @@
+body {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border: 0.05rem solid black;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: rgba(0, 0, 0, 0.4);
+  border: 0.05rem solid orange;
+  color: white;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border-radius: 2rem;
+  border: 0.05rem solid black;
+}
+
+input:hover {
+  outline: none;
+}
+
+input.submit {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+input.submit:hover {
+  background: rgba(0, 0, 0, 0.4);
+  border: 0.05rem solid orange;
+  color: white;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h3 {
+  font-size: 2rem;
+}
+
+main {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+main form {
+  font-size: 1.6rem;
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+main form > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+main #url-list {
+  font-size: 1rem;
+  list-style: none;
+}
+
+main #url-list li > *:first-child {
+  margin-right: 0.5rem;
+}

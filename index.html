@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Tiny URL</title>
+    <meta name="description" content="Tiny url clone" />
+    <meta name="author" content="Benjamin L. Morrison" />
+
+    <link rel="stylesheet" href="style.css?v=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <h3>Tiny URL Clone</h3>
+      <button id='to-admin-page'>Admin Page</button>
+    </header>
+    <main>
+      <div class="container">
+        <form id="form-convert">
+          <label for="input-url">Enter a long URL to make tiny: </label>
+          <input
+            type="text"
+            id="input-url"
+            placeholder="Enter url..."
+            name="input-url"
+          />
+          <input type="submit" value="Convert" class='submit' />
+        </form>
+        <div id="url-output"></div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
